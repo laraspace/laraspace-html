@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laraspace - Laravel Admin</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="../../assets/global/js/core/pace.js"></script>
+    <!-- START CORE CSS-->
+    <link href="../../assets/global/css/laraspace.css" rel="stylesheet" type="text/css">
+    <!-- END CORE CSS -->
+
+    <!-- START CORE PLUGIN -->
+    <link href="../../assets/plugins/fontawesome/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/plugins/customScrollBar/customScrollBar.css" rel="stylesheet" type="text/css">
+    <!-- END CORE PLUGIN -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-token" content="ju0AJjtVlV2LnL9lhkK9fOpg7DhuaMFVgR1mifUv">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../../assets/global/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../assets/global/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../assets/global/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/global/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/global/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../assets/global/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/global/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../assets/global/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/global/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../assets/global/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../assets/global/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../assets/global/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../assets/global/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../assets/global/img/favicons/manifest.json">
+    <link rel="mask-icon" href="../../assets/global/img/favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="../../assets/global/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/global/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/global/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#333333">
+</head>
+<body class="layout-default skin-default">
+
+<div id="app" class="site-wrapper">
+    <header class="site-header">
+        <a href="#" class="brand-main">
+            <img src="../../assets/global/img/logo-desk.png" id="logo-desk" alt="Laraspace Logo" class="hidden-sm-down">
+            <img src="../../assets/global/img/logo-mobile.png" id="logo-mobile" alt="Laraspace Logo"
+                 class="hidden-md-up">
+        </a>
+        <a href="#" class="nav-toggle">
+            <div class="hamburger hamburger--htla">
+                <span>toggle menu</span>
+            </div>
+        </a>
+
+        <ul class="action-list">
+            <li>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="icon-fa icon-fa-plus"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-edit"></i> New Post</a>
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-tag"></i> New Category</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-star"></i> Separated link</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="icon-fa icon-fa-bell"></i></a>
+                <div class="dropdown-menu dropdown-menu-right notification-dropdown">
+                    <h6 class="dropdown-header">Notifications</h6>
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-user"></i> New User was Registered</a>
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-comment"></i> A Comment has been posted.</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="avatar"><img
+                        src="../../assets/global/img/avatars/avatar.png" alt="Avatar"></a>
+                <div class="dropdown-menu dropdown-menu-right notification-dropdown">
+                    <a class="dropdown-item" href="../settings.html"><i class="icon-fa icon-fa-cogs"></i> Settings</a>
+                    <a class="dropdown-item" href="../../login.html"><i class="icon-fa icon-fa-sign-out"></i> Logout</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div class="mobile-menu-overlay"></div>
+    <div class="sidebar-left " id="mobile-nav">
+        <div class="sidebar-body scroll-pane">
+            <ul class="side-nav metismenu" id="menu">
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-dashboard"></i> Dashboard <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../dashboard/basic.html">Basic</a>
+                        </li>
+                        <li class="">
+                            <a href="../dashboard/ecommerce.html">Ecommerce</a>
+                        </li>
+                        <li class="">
+                            <a href="../dashboard/finance.html">Finance</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-th-large"></i> Layouts <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../layouts/sidebar.html">Sidebar</a>
+                        </li>
+                        <li class="">
+                            <a href="../layouts/icon-sidebar.html">Icon Sidebar</a>
+                        </li>
+                        <li class="">
+                            <a href="../layouts/horizontal-menu.html">Horizontal Menu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-star"></i> Basic UI <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../basic-ui/buttons.html">Buttons</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/cards.html">Cards</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/tabs.html">Tabs &amp; Accordians</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/typography.html">Typography</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/tables.html">Tables</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/modals.html">Modals</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/progress-bars.html">Progress Bar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="icon-fa icon-fa-puzzle-piece"></i> Components <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="datatables.html">Datatables</a>
+                        </li>
+                        <li class="">
+                            <a href="notifications.html">Notifications</a>
+                        </li>
+                        <li class="active">
+                            <a href="nestable-list.html"> Nestable List</a>
+                        </li>
+                        <li class="">
+                            <a href="nestable-tree.html">Nestable Tree</a>
+                        </li>
+                        <li class="">
+                            <a href="image-cropper.html">Image Cropper</a>
+                        </li>
+                        <li class="">
+                            <a href="zoom.html">Image Zoom</a>
+                        </li>
+                        <li class="">
+                            <a href="calendar.html">Calendar</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Rating<span class="icon-fa arrow icon-fa-fw"></span> </a>
+                            <ul aria-expanded="true" class="collapse submenu">
+                                <li class=""><a href="ratings/star.html">Star Ratings</a></li>
+                                <li class=""><a href="ratings/bar.html">Bar Ratings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-bar-chart"></i> Charts <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../charts/chartjs.html">Chart JS</a>
+                        </li>
+                        <li class="">
+                            <a href="../charts/sparklines.html">Sparkline</a>
+                        </li>
+                        <li class="">
+                            <a href="../charts/amcharts.html">AM Charts</a>
+                        </li>
+                        <li class="">
+                            <a href="../charts/morris.html">Morris</a>
+                        </li>
+                        <li class="">
+                            <a href="../charts/gauges.html">Gauges</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-eye"></i> Icons <span class="icon-fa arrow icon-fa-fw"></span>
+                    </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../icons/icomoon.html">IcoMoon</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/evil.html">Evil Icons</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/meteo.html">Meteo Icons</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/line.html">Line Icons</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/fps-line.html">FPS Line</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/fontawesome.html">Font Awesome</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-rocket"></i> Forms <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../forms/general.html">General Elements</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/advanced.html">Advanced Elements</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/layouts.html">Form Layouts</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/validation.html">Form Validation</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/wizards.html">Form Wizard</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/wizards-2.html">Form Wizard 2</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/editors.html">Editors</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-image"></i> Gallery <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../gallery/grid.html">Gallery Grid</a>
+                        </li>
+                        <li class="">
+                            <a href="../gallery/masonry-grid.html">Gallery Masonry Grid</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-file"></i> Pages <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../../login.html">Login</a>
+                        </li>
+                        <li class="">
+                            <a href="../login-2.html">Login 2</a>
+                        </li>
+                        <li class="">
+                            <a href="../login-3.html">Login 3</a>
+                        </li>
+                        <li class="">
+                            <a href="../../register.html">Register</a>
+                        </li>
+                        <li class="">
+                            <a href="../register-2.html">Register 2</a>
+                        </li>
+                        <li class="">
+                            <a href="../register-3.html">Register 3</a>
+                        </li>
+                        <li class="">
+                            <a href="../404.html">404 Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-user"></i> Users <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../users.html">All Users</a>
+                        </li>
+                        <li class="">
+                            <a href="../users/1.html">User Profile</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="../todos.html"><i class="icon-fa icon-fa-check"></i> Todo App </a>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-cogs"></i> Settings <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../settings/social.html">Social</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="page-header">
+            <h3 class="page-title">Nestable Lists</h3>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../dashboard/basic.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="nestable-list.html">Components</a></li>
+                <li class="breadcrumb-item active">Nestable List</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="caption">
+                    <h6>Serialised Output</h6>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-info btn-sm" type="button" data-action="expand-all">
+                        Expand All
+                    </button>
+                    <button class="btn btn-warning btn-sm" type="button" data-action="collapse-all">
+                        Collapse All
+                    </button>
+                </div>
+            </div>
+            <div class="card-block">
+                <div class="form-group">
+                    <textarea id="nestable-output" class="form-control"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="nestable2-output" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h6>Nestable Lists</h6>
+            </div>
+            <div class="card-block">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="dd" id="nestable">
+                            <h5 class="section-semi-title">List Default</h5>
+                            <ol class="dd-list">
+                                <li class="dd-item" data-id="1">
+                                    <div class="dd-handle">Item 1</div>
+                                </li>
+                                <li class="dd-item" data-id="2">
+                                    <div class="dd-handle">Item 2</div>
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="3">
+                                            <div class="dd-handle">Item 3</div>
+                                        </li>
+                                        <li class="dd-item" data-id="4">
+                                            <div class="dd-handle">Item 4</div>
+                                        </li>
+                                        <li class="dd-item" data-id="5">
+                                            <div class="dd-handle">Item 5</div>
+                                            <ol class="dd-list">
+                                                <li class="dd-item" data-id="6">
+                                                    <div class="dd-handle">Item 6</div>
+                                                </li>
+                                                <li class="dd-item" data-id="7">
+                                                    <div class="dd-handle">Item 7</div>
+                                                </li>
+                                                <li class="dd-item" data-id="8">
+                                                    <div class="dd-handle">Item 8</div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li class="dd-item" data-id="9">
+                                            <div class="dd-handle">Item 9</div>
+                                        </li>
+                                        <li class="dd-item" data-id="10">
+                                            <div class="dd-handle">Item 10</div>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="dd-item" data-id="11">
+                                    <div class="dd-handle">Item 11</div>
+                                </li>
+                                <li class="dd-item" data-id="12">
+                                    <div class="dd-handle">Item 12</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="dd nestable-light" id="nestable2">
+                            <h5 class="section-semi-title">List Light</h5>
+                            <ol class="dd-list">
+                                <li class="dd-item" data-id="13">
+                                    <div class="dd-handle">Item 13</div>
+                                </li>
+                                <li class="dd-item" data-id="14">
+                                    <div class="dd-handle">Item 14</div>
+                                </li>
+                                <li class="dd-item" data-id="15">
+                                    <div class="dd-handle">Item 15</div>
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="16">
+                                            <div class="dd-handle">Item 16</div>
+                                        </li>
+                                        <li class="dd-item" data-id="17">
+                                            <div class="dd-handle">Item 17</div>
+                                        </li>
+                                        <li class="dd-item" data-id="18">
+                                            <div class="dd-handle">Item 18</div>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="section-semi-title mt-4">List with Draggable Handles</h5>
+
+                <div class="dd" id="nestable3">
+                    <ol class="dd-list">
+                        <li class="dd-item dd3-item" data-id="13">
+                            <div class="dd-handle dd3-handle">Drag</div>
+                            <div class="dd3-content">Item 13</div>
+                        </li>
+                        <li class="dd-item dd3-item" data-id="14">
+                            <div class="dd-handle dd3-handle">Drag</div>
+                            <div class="dd3-content">Item 14</div>
+                        </li>
+                        <li class="dd-item dd3-item" data-id="15">
+                            <div class="dd-handle dd3-handle">Drag</div>
+                            <div class="dd3-content">Item 15</div>
+                            <ol class="dd-list">
+                                <li class="dd-item dd3-item" data-id="16">
+                                    <div class="dd-handle dd3-handle">Drag</div>
+                                    <div class="dd3-content">Item 16</div>
+                                </li>
+                                <li class="dd-item dd3-item" data-id="17">
+                                    <div class="dd-handle dd3-handle">Drag</div>
+                                    <div class="dd3-content">Item 17</div>
+                                </li>
+                                <li class="dd-item dd3-item" data-id="18">
+                                    <div class="dd-handle dd3-handle">Drag</div>
+                                    <div class="dd3-content">Item 18</div>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="text-right">
+            Powered by <a href="http://bytefury.com/" target="_blank">Bytefury</a>
+        </div>
+    </footer>
+    <div class="skin-tools">
+        <a class="skin-tools-action">
+            <i class="icon-fa icon-fa-cog"></i>
+        </a>
+        <div class="skin-tools-content">
+            <h5 class="mt-2">Select Skin</h5>
+            <div class="row mt-md-4">
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio active" data-skin="default" title="Skin - Default">
+                        <img src="../../assets/global/img/skins/skin-default.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="tyrell" data-logo="white" title="Skin - Tyrell">
+                        <img src="../../assets/global/img/skins/skin-tyrell.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-md-4">
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="arryn" data-logo="white" title="Skin - Arryn">
+                        <img src="../../assets/global/img/skins/skin-arryn.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="lannister" data-logo="white" title="Skin - Lannister">
+                        <img src="../../assets/global/img/skins/skin-lannister.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-md-4">
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="stark" title="Skin - Stark">
+                        <img src="../../assets/global/img/skins/skin-stark.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="targaryen" title="Skin - Targaryen">
+                        <img src="../../assets/global/img/skins/skin-targaryen.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- START GLOBAL  PLUGINS -->
+<script src="../../assets/plugins/jquery/jquery.js"></script>
+<script src="../../assets/plugins/bootstrap/tether.js"></script>
+<script src="../../assets/plugins/bootstrap/bootstrap.js"></script>
+<script src="../../assets/plugins/customScrollBar/customScrollBar.js"></script>
+<script src="../../assets/plugins/metisMenu/metisMenu.js"></script>
+<script src="../../assets/plugins/laraspace/laraspace-layout.js"></script>
+<script src="../../assets/global/js/demo/skintools.js"></script>
+<!-- END GLOBAL  PLUGINS -->
+
+<!-- START PAGE PLUGINS  -->
+<script src="../../assets/plugins/nestable/nestable.js"></script>
+<script src="../../assets/pages/nestable/list.js"></script>
+<!-- END PAGE PLUGINS  -->
+
+</body>
+</html>

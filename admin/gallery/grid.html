@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laraspace - Laravel Admin</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="../../assets/global/js/core/pace.js"></script>
+    <!-- START CORE CSS-->
+    <link href="../../assets/global/css/laraspace.css" rel="stylesheet" type="text/css">
+    <!-- END CORE CSS -->
+
+    <!-- START CORE PLUGIN -->
+    <link href="../../assets/plugins/fontawesome/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../../assets/plugins/customScrollBar/customScrollBar.css" rel="stylesheet" type="text/css">
+    <!-- END CORE PLUGIN -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-token" content="ju0AJjtVlV2LnL9lhkK9fOpg7DhuaMFVgR1mifUv">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../../assets/global/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../assets/global/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../assets/global/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/global/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/global/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../assets/global/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/global/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../assets/global/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/global/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../assets/global/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../assets/global/img/favicons/android-chrome-192x192.png"
+          sizes="192x192">
+    <link rel="icon" type="image/png" href="../../assets/global/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../assets/global/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../assets/global/img/favicons/manifest.json">
+    <link rel="mask-icon" href="../../assets/global/img/favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="../../assets/global/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/global/img/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/global/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#333333">
+</head>
+<body class="layout-default skin-default">
+
+<div id="app" class="site-wrapper">
+    <header class="site-header">
+        <a href="#" class="brand-main">
+            <img src="../../assets/global/img/logo-desk.png" id="logo-desk" alt="Laraspace Logo" class="hidden-sm-down">
+            <img src="../../assets/global/img/logo-mobile.png" id="logo-mobile" alt="Laraspace Logo"
+                 class="hidden-md-up">
+        </a>
+        <a href="#" class="nav-toggle">
+            <div class="hamburger hamburger--htla">
+                <span>toggle menu</span>
+            </div>
+        </a>
+
+        <ul class="action-list">
+            <li>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="icon-fa icon-fa-plus"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-edit"></i> New Post</a>
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-tag"></i> New Category</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-star"></i> Separated link</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                        class="icon-fa icon-fa-bell"></i></a>
+                <div class="dropdown-menu dropdown-menu-right notification-dropdown">
+                    <h6 class="dropdown-header">Notifications</h6>
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-user"></i> New User was Registered</a>
+                    <a class="dropdown-item" href="#"><i class="icon-fa icon-fa-comment"></i> A Comment has been posted.</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="avatar"><img
+                        src="../../assets/global/img/avatars/avatar.png" alt="Avatar"></a>
+                <div class="dropdown-menu dropdown-menu-right notification-dropdown">
+                    <a class="dropdown-item" href="../settings.html"><i class="icon-fa icon-fa-cogs"></i> Settings</a>
+                    <a class="dropdown-item" href="../../login.html"><i class="icon-fa icon-fa-sign-out"></i> Logout</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div class="mobile-menu-overlay"></div>
+    <div class="sidebar-left " id="mobile-nav">
+        <div class="sidebar-body scroll-pane">
+            <ul class="side-nav metismenu" id="menu">
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-dashboard"></i> Dashboard <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../dashboard/basic.html">Basic</a>
+                        </li>
+                        <li class="">
+                            <a href="../dashboard/ecommerce.html">Ecommerce</a>
+                        </li>
+                        <li class="">
+                            <a href="../dashboard/finance.html">Finance</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-th-large"></i> Layouts <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../layouts/sidebar.html">Sidebar</a>
+                        </li>
+                        <li class="">
+                            <a href="../layouts/icon-sidebar.html">Icon Sidebar</a>
+                        </li>
+                        <li class="">
+                            <a href="../layouts/horizontal-menu.html">Horizontal Menu</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-star"></i> Basic UI <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../basic-ui/buttons.html">Buttons</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/cards.html">Cards</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/tabs.html">Tabs &amp; Accordians</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/typography.html">Typography</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/tables.html">Tables</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/modals.html">Modals</a>
+                        </li>
+                        <li class="">
+                            <a href="../basic-ui/progress-bars.html">Progress Bar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-puzzle-piece"></i> Components <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../components/datatables.html">Datatables</a>
+                        </li>
+                        <li class="">
+                            <a href="../components/notifications.html">Notifications</a>
+                        </li>
+                        <li class="">
+                            <a href="../components/nestable-list.html"> Nestable List</a>
+                        </li>
+                        <li class="">
+                            <a href="../components/nestable-tree.html">Nestable Tree</a>
+                        </li>
+                        <li class="">
+                            <a href="../components/image-cropper.html">Image Cropper</a>
+                        </li>
+                        <li class="">
+                            <a href="../components/zoom.html">Image Zoom</a>
+                        </li>
+                        <li class="">
+                            <a href="../components/calendar.html">Calendar</a>
+                        </li>
+                        <li class="">
+                            <a href="#">Rating<span class="icon-fa arrow icon-fa-fw"></span> </a>
+                            <ul aria-expanded="true" class="collapse submenu">
+                                <li class=""><a href="../components/ratings/star.html">Star Ratings</a></li>
+                                <li class=""><a href="../components/ratings/bar.html">Bar Ratings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-bar-chart"></i> Charts <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../charts/chartjs.html">Chart JS</a>
+                        </li>
+                        <li class="">
+                            <a href="../charts/sparklines.html">Sparkline</a>
+                        </li>
+                        <li class="">
+                            <a href="../charts/amcharts.html">AM Charts</a>
+                        </li>
+                        <li class="">
+                            <a href="../charts/morris.html">Morris</a>
+                        </li>
+                        <li class="">
+                            <a href="../charts/gauges.html">Gauges</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-eye"></i> Icons <span class="icon-fa arrow icon-fa-fw"></span>
+                    </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../icons/icomoon.html">IcoMoon</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/evil.html">Evil Icons</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/meteo.html">Meteo Icons</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/line.html">Line Icons</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/fps-line.html">FPS Line</a>
+                        </li>
+                        <li class="">
+                            <a href="../icons/fontawesome.html">Font Awesome</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-rocket"></i> Forms <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../forms/general.html">General Elements</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/advanced.html">Advanced Elements</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/layouts.html">Form Layouts</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/validation.html">Form Validation</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/wizards.html">Form Wizard</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/wizards-2.html">Form Wizard 2</a>
+                        </li>
+                        <li class="">
+                            <a href="../forms/editors.html">Editors</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="icon-fa icon-fa-image"></i> Gallery <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="active">
+                            <a href="grid.html">Gallery Grid</a>
+                        </li>
+                        <li class="">
+                            <a href="masonry-grid.html">Gallery Masonry Grid</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-file"></i> Pages <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../../login.html">Login</a>
+                        </li>
+                        <li class="">
+                            <a href="../login-2.html">Login 2</a>
+                        </li>
+                        <li class="">
+                            <a href="../login-3.html">Login 3</a>
+                        </li>
+                        <li class="">
+                            <a href="../../register.html">Register</a>
+                        </li>
+                        <li class="">
+                            <a href="../register-2.html">Register 2</a>
+                        </li>
+                        <li class="">
+                            <a href="../register-3.html">Register 3</a>
+                        </li>
+                        <li class="">
+                            <a href="../404.html">404 Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-user"></i> Users <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../users.html">All Users</a>
+                        </li>
+                        <li class="">
+                            <a href="../users/1.html">User Profile</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <a href="../todos.html"><i class="icon-fa icon-fa-check"></i> Todo App </a>
+                </li>
+                <li class="">
+                    <a href="#"><i class="icon-fa icon-fa-cogs"></i> Settings <span
+                            class="icon-fa arrow icon-fa-fw"></span> </a>
+                    <ul aria-expanded="true" class="collapse">
+                        <li class="">
+                            <a href="../settings/social.html">Social</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <div class="page-header">
+            <h3 class="page-title">Gallery Grid</h3>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Gallery</a></li>
+                <li class="breadcrumb-item active">Gallery Grid</li>
+            </ol>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h6>Image Gallery</h6>
+            </div>
+            <div class="card-block">
+                <div class="my-gallery image-gallery" itemscope>
+                    <div class="row">
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/1.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/1.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 1</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/2.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/2.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 2</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/3.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/3.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 3</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/4.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/4.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 4</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row">
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/5.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/5.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 1</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/6.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/6.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 2</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/7.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/7.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 3</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/8.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/8.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 4</figcaption>
+                        </figure>
+                    </div>
+                    <div class="row">
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/9.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/9.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 1</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/10.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/10.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 2</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/11.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/11.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 3</figcaption>
+                        </figure>
+                        <figure class="col-lg-3 col-md-6 col-xs-12" itemprop="associatedMedia" itemscope>
+                            <a href="../../assets/global/img/demo/gallery/12.jpg" itemprop="contentUrl"
+                               data-size="480x360">
+                                <img src="../../assets/global/img/demo/gallery/12.jpg"
+                                     itemprop="thumbnail" class="img-fluid" alt="Image description"/>
+                            </a>
+                            <figcaption itemprop="caption description">Image caption 4</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Root element of PhotoSwipe. Must have class pswp. -->
+                <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                    <!-- Background of PhotoSwipe.
+                         It's a separate element, as animating opacity is faster than rgba(). -->
+                    <div class="pswp__bg"></div>
+
+                    <!-- Slides wrapper with overflow:hidden. -->
+                    <div class="pswp__scroll-wrap">
+
+                        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                        <div class="pswp__container">
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                            <div class="pswp__item"></div>
+                        </div>
+
+                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                        <div class="pswp__ui pswp__ui--hidden">
+
+                            <div class="pswp__top-bar">
+
+                                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                                <div class="pswp__counter"></div>
+
+                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                                <!-- element will get class pswp__preloader--active when preloader is running -->
+                                <div class="pswp__preloader">
+                                    <div class="pswp__preloader__icn">
+                                        <div class="pswp__preloader__cut">
+                                            <div class="pswp__preloader__donut"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                                <div class="pswp__share-tooltip"></div>
+                            </div>
+
+                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                            </button>
+
+                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                            </button>
+
+                            <div class="pswp__caption">
+                                <div class="pswp__caption__center"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h6>YouTube Video Gallery</h6>
+            </div>
+            <div class="card-block">
+                <div class="my-gallery youtube-video-gallery">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=3pn2SI4KGJc"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=6v2L2UGZJAM"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=ZN2SwwfeCRc"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=DjxEhLTRtPY"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=Ce4tYw6IE70"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=3rHXrA80NH4"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=ftEJIZA7z-I"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 ">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-youtube="https://www.youtube.com/watch?v=k_GM1JA608Y"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h6>Vimeo Video Gallery</h6>
+            </div>
+            <div class="card-block">
+                <div class="my-gallery vimeo-video-gallery">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/102787065"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/18554749"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/79142264"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/49614043"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/102514372"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/113404928"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/143709971"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <div class="demo embed-responsive-item"
+                                     data-vimeo="https://vimeo.com/204895750"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="text-right">
+            Powered by <a href="http://bytefury.com/" target="_blank">Bytefury</a>
+        </div>
+    </footer>
+    <div class="skin-tools">
+        <a class="skin-tools-action">
+            <i class="icon-fa icon-fa-cog"></i>
+        </a>
+        <div class="skin-tools-content">
+            <h5 class="mt-2">Select Skin</h5>
+            <div class="row mt-md-4">
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio active" data-skin="default" title="Skin - Default">
+                        <img src="../../assets/global/img/skins/skin-default.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="tyrell" data-logo="white" title="Skin - Tyrell">
+                        <img src="../../assets/global/img/skins/skin-tyrell.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-md-4">
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="arryn" data-logo="white" title="Skin - Arryn">
+                        <img src="../../assets/global/img/skins/skin-arryn.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="lannister" data-logo="white" title="Skin - Lannister">
+                        <img src="../../assets/global/img/skins/skin-lannister.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-md-4">
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="stark" title="Skin - Stark">
+                        <img src="../../assets/global/img/skins/skin-stark.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-sm-6 skin-item">
+                    <a href="#" class="skin-radio" data-skin="targaryen" title="Skin - Targaryen">
+                        <img src="../../assets/global/img/skins/skin-targaryen.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- START GLOBAL  PLUGINS -->
+<script src="../../assets/plugins/jquery/jquery.js"></script>
+<script src="../../assets/plugins/bootstrap/tether.js"></script>
+<script src="../../assets/plugins/bootstrap/bootstrap.js"></script>
+<script src="../../assets/plugins/customScrollBar/customScrollBar.js"></script>
+<script src="../../assets/plugins/metisMenu/metisMenu.js"></script>
+<script src="../../assets/plugins/laraspace/laraspace-layout.js"></script>
+<script src="../../assets/global/js/demo/skintools.js"></script>
+<!-- END GLOBAL  PLUGINS -->
+
+<!-- START  PAGE PLUGINS  -->
+<script src="../../assets/plugins/gallery/image/photoswipe.js"></script>
+<script src="../../assets/plugins/gallery/image/photoswipe-ui-default.js"></script>
+<script src="../../assets/plugins/gallery/image/mp.mansory.js"></script>
+<script src="../../assets/plugins/gallery/video/videobox.js"></script>
+<script src="../../assets/pages/gallery.js"></script>
+<!-- END PAGE PLUGINS -->
+
+</body>
+</html>
