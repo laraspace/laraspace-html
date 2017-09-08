@@ -80,9 +80,9 @@ mix.combine([
 
 ], 'assets/global/js/core/plugins.js')
 
-.js('js/app.js', 'assets/global/js/core/')
+.js('assets/vue/app.js', 'assets/global/js/core/')
 
-.sass('sass/laraspace.scss', 'assets/global/css/')
+.sass('sass/laraspace.scss', 'assets/global/css/');
 
 /*
  |--------------------------------------------------------------------------
@@ -102,4 +102,4 @@ mix.combine([
     pluginPath + 'laraspace/laraspace-notifs.js'
 ], 'assets/front/js/plugins.js')
 
-.sass('sass/front.scss', 'assets/front/css/')
+.sass('sass/front.scss', 'assets/front/css/');

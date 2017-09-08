@@ -1,4 +1,4 @@
-﻿/*
+/*
  * VideoBox
  * Example and Documentation: https://github.com/tedktedk/videobox/blob/master/README.md
  *

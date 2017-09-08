@@ -1,4 +1,4 @@
-/*!
+/*
  * jQuery Raty - A Star Rating Plugin
  *
  * The MIT License
@@ -8,8 +8,6 @@
  * @version : 2.7.1
  *
  */
-
-;
 (function($) {
     'use strict';
 
