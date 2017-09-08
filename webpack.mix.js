@@ -9,6 +9,7 @@ let mix = require('laravel-mix');
 var pluginPath = 'assets/plugins/';
 mix.setPublicPath('assets');
 mix.setResourceRoot('../../');
+
 mix.combine([
     // ** Required Plugins **
     pluginPath + 'jquery/jquery.js',
