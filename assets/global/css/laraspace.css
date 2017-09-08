@@ -10213,8 +10213,8 @@ a.text-gray-dark:hover {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/fonts/fontawesome-webfont.eot?25a32416abee198dd821b0b17a198a8f);
-  src: url(/fonts/fontawesome-webfont.eot?25a32416abee198dd821b0b17a198a8f) format("embedded-opentype"), url(/fonts/fontawesome-webfont.woff2?e6cf7c6ec7c2d6f670ae9d762604cb0b) format("woff2"), url(/fonts/fontawesome-webfont.woff?c8ddf1e5e5bf3682bc7bebf30f394148) format("woff"), url(/fonts/fontawesome-webfont.ttf?1dc35d25e61d819a9c357074014867ab) format("truetype"), url(/fonts/fontawesome-webfont.svg?24c601e721ebd8279d38e2cfa0d01bc6) format("svg");
+  src: url(../../fonts/fontawesome-webfont.eot?25a32416abee198dd821b0b17a198a8f);
+  src: url(../../fonts/fontawesome-webfont.eot?25a32416abee198dd821b0b17a198a8f) format("embedded-opentype"), url(../../fonts/fontawesome-webfont.woff2?e6cf7c6ec7c2d6f670ae9d762604cb0b) format("woff2"), url(../../fonts/fontawesome-webfont.woff?c8ddf1e5e5bf3682bc7bebf30f394148) format("woff"), url(../../fonts/fontawesome-webfont.ttf?1dc35d25e61d819a9c357074014867ab) format("truetype"), url(../../fonts/fontawesome-webfont.svg?24c601e721ebd8279d38e2cfa0d01bc6) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -19159,8 +19159,8 @@ li.ui-timepicker-selected .ui-timepicker-duration,
   font-family: "summernote";
   font-style: normal;
   font-weight: normal;
-  src: url(/fonts/summernote.eot?3bd53cb9c8ed8f25b6c27f6bc24b9ef6);
-  src: url(/fonts/summernote.eot?3bd53cb9c8ed8f25b6c27f6bc24b9ef6) format("embedded-opentype"), url(/fonts/summernote.woff?dfb4f9a49453b913d3d2b85b573c347a) format("woff"), url(/fonts/summernote.ttf?c04af48f7dbe8e1c509e548ef0b5b807) format("truetype");
+  src: url(../../fonts/summernote.eot?3bd53cb9c8ed8f25b6c27f6bc24b9ef6);
+  src: url(../../fonts/summernote.eot?3bd53cb9c8ed8f25b6c27f6bc24b9ef6) format("embedded-opentype"), url(../../fonts/summernote.woff?dfb4f9a49453b913d3d2b85b573c347a) format("woff"), url(../../fonts/summernote.ttf?c04af48f7dbe8e1c509e548ef0b5b807) format("truetype");
 }
 
 [class^="note-icon-"]:before,
@@ -21774,7 +21774,7 @@ span.CodeMirror-selectedtext {
 
 .jstree-default .jstree-node,
 .jstree-default .jstree-icon {
-  background-image: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec);
+  background-image: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec);
 }
 
 .jstree-default .jstree-node {
@@ -21906,15 +21906,15 @@ span.CodeMirror-selectedtext {
 }
 
 .jstree-default > .jstree-container-ul .jstree-loading > .jstree-ocl {
-  background: url(/images/throbber.gif?9ed4669f524bec38319be63a2ee4ba26) center center no-repeat;
+  background: url(../../images/throbber.gif?9ed4669f524bec38319be63a2ee4ba26) center center no-repeat;
 }
 
 .jstree-default .jstree-file {
-  background: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec) -100px -68px no-repeat;
+  background: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec) -100px -68px no-repeat;
 }
 
 .jstree-default .jstree-folder {
-  background: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec) -260px -4px no-repeat;
+  background: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec) -260px -4px no-repeat;
 }
 
 .jstree-default > .jstree-container-ul > .jstree-node {
@@ -21929,7 +21929,7 @@ span.CodeMirror-selectedtext {
 
 #jstree-dnd.jstree-default .jstree-ok,
 #jstree-dnd.jstree-default .jstree-er {
-  background-image: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec);
+  background-image: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec);
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -22005,7 +22005,7 @@ span.CodeMirror-selectedtext {
 
 .jstree-default-small .jstree-node,
 .jstree-default-small .jstree-icon {
-  background-image: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec);
+  background-image: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec);
 }
 
 .jstree-default-small .jstree-node {
@@ -22137,15 +22137,15 @@ span.CodeMirror-selectedtext {
 }
 
 .jstree-default-small > .jstree-container-ul .jstree-loading > .jstree-ocl {
-  background: url(/images/throbber.gif?9ed4669f524bec38319be63a2ee4ba26) center center no-repeat;
+  background: url(../../images/throbber.gif?9ed4669f524bec38319be63a2ee4ba26) center center no-repeat;
 }
 
 .jstree-default-small .jstree-file {
-  background: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec) -103px -71px no-repeat;
+  background: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec) -103px -71px no-repeat;
 }
 
 .jstree-default-small .jstree-folder {
-  background: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec) -263px -7px no-repeat;
+  background: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec) -263px -7px no-repeat;
 }
 
 .jstree-default-small > .jstree-container-ul > .jstree-node {
@@ -22160,7 +22160,7 @@ span.CodeMirror-selectedtext {
 
 #jstree-dnd.jstree-default-small .jstree-ok,
 #jstree-dnd.jstree-default-small .jstree-er {
-  background-image: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec);
+  background-image: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec);
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -22236,7 +22236,7 @@ span.CodeMirror-selectedtext {
 
 .jstree-default-large .jstree-node,
 .jstree-default-large .jstree-icon {
-  background-image: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec);
+  background-image: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec);
 }
 
 .jstree-default-large .jstree-node {
@@ -22368,15 +22368,15 @@ span.CodeMirror-selectedtext {
 }
 
 .jstree-default-large > .jstree-container-ul .jstree-loading > .jstree-ocl {
-  background: url(/images/throbber.gif?9ed4669f524bec38319be63a2ee4ba26) center center no-repeat;
+  background: url(../../images/throbber.gif?9ed4669f524bec38319be63a2ee4ba26) center center no-repeat;
 }
 
 .jstree-default-large .jstree-file {
-  background: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec) -96px -64px no-repeat;
+  background: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec) -96px -64px no-repeat;
 }
 
 .jstree-default-large .jstree-folder {
-  background: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec) -256px 0 no-repeat;
+  background: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec) -256px 0 no-repeat;
 }
 
 .jstree-default-large > .jstree-container-ul > .jstree-node {
@@ -22391,7 +22391,7 @@ span.CodeMirror-selectedtext {
 
 #jstree-dnd.jstree-default-large .jstree-ok,
 #jstree-dnd.jstree-default-large .jstree-er {
-  background-image: url(/images/32px.png?db49c8de4f267eede40a9a8843efcdec);
+  background-image: url(../../images/32px.png?db49c8de4f267eede40a9a8843efcdec);
   background-repeat: no-repeat;
   background-color: transparent;
 }
@@ -22448,13 +22448,13 @@ span.CodeMirror-selectedtext {
   }
 
   #jstree-dnd.jstree-dnd-responsive > .jstree-ok {
-    background-image: url(/images/40px.png?1f075735090412ed7eb8077d819b19c6);
+    background-image: url(../../images/40px.png?1f075735090412ed7eb8077d819b19c6);
     background-position: 0 -200px;
     background-size: 120px 240px;
   }
 
   #jstree-dnd.jstree-dnd-responsive > .jstree-er {
-    background-image: url(/images/40px.png?1f075735090412ed7eb8077d819b19c6);
+    background-image: url(../../images/40px.png?1f075735090412ed7eb8077d819b19c6);
     background-position: -40px -200px;
     background-size: 120px 240px;
   }
@@ -22469,7 +22469,7 @@ span.CodeMirror-selectedtext {
 
 @media (max-width: 768px) {
   .jstree-default-responsive .jstree-icon {
-    background-image: url(/images/40px.png?1f075735090412ed7eb8077d819b19c6);
+    background-image: url(../../images/40px.png?1f075735090412ed7eb8077d819b19c6);
   }
 
   .jstree-default-responsive .jstree-node,
@@ -22601,7 +22601,7 @@ span.CodeMirror-selectedtext {
   .jstree-default-responsive .jstree-node > .jstree-ocl,
   .jstree-default-responsive .jstree-themeicon,
   .jstree-default-responsive .jstree-checkbox {
-    background-image: url(/images/40px.png?1f075735090412ed7eb8077d819b19c6);
+    background-image: url(../../images/40px.png?1f075735090412ed7eb8077d819b19c6);
     background-size: 120px 240px;
   }
 
@@ -22629,12 +22629,12 @@ span.CodeMirror-selectedtext {
   }
 
   .jstree-default-responsive .jstree-file {
-    background: url(/images/40px.png?1f075735090412ed7eb8077d819b19c6) 0 -160px no-repeat;
+    background: url(../../images/40px.png?1f075735090412ed7eb8077d819b19c6) 0 -160px no-repeat;
     background-size: 120px 240px;
   }
 
   .jstree-default-responsive .jstree-folder {
-    background: url(/images/40px.png?1f075735090412ed7eb8077d819b19c6) -40px -40px no-repeat;
+    background: url(../../images/40px.png?1f075735090412ed7eb8077d819b19c6) -40px -40px no-repeat;
     background-size: 120px 240px;
   }
 
@@ -22775,7 +22775,7 @@ span.CodeMirror-selectedtext {
 
 @font-face {
   font-family: 'IcoMoon-Free';
-  src: url(/fonts/icomoon.ttf?72c742bc4398b2803e5ebcdc65d4a03c) format("truetype");
+  src: url(../../fonts/icomoon.ttf?72c742bc4398b2803e5ebcdc65d4a03c) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -25227,8 +25227,8 @@ span.CodeMirror-selectedtext {
 
 @font-face {
   font-family: 'fontello';
-  src: url(/fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18);
-  src: url(/fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18) format("embedded-opentype"), url(/fonts/fontello.woff?198b1acf984a2840854aa373a8a27a67) format("woff"), url(/fonts/fontello.ttf?993985cb285418d7f1a9f12a1ad9d9f6) format("truetype"), url(/fonts/fontello.svg?5e4fc23253f13ad54d27c197e8f412e4) format("svg");
+  src: url(../../fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18);
+  src: url(../../fonts/fontello.eot?f16aa96c6a63dba6cc7bf750fb157d18) format("embedded-opentype"), url(../../fonts/fontello.woff?198b1acf984a2840854aa373a8a27a67) format("woff"), url(../../fonts/fontello.ttf?993985cb285418d7f1a9f12a1ad9d9f6) format("truetype"), url(../../fonts/fontello.svg?5e4fc23253f13ad54d27c197e8f412e4) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -25823,8 +25823,8 @@ span.CodeMirror-selectedtext {
 
 @font-face {
   font-family: 'fpslineicons';
-  src: url(/fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f);
-  src: url(/fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f) format("embedded-opentype"), url(/fonts/fpslineicons.woff?d4ffd8d867c1e8f54235a763738de7f2) format("woff"), url(/fonts/fpslineicons.ttf?a98d6230aa00aef0abfb57fcc7a93015) format("truetype"), url(/fonts/fpslineicons.svg?f590d10c44ee4eae2a3c48ebf33120b9) format("svg");
+  src: url(../../fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f);
+  src: url(../../fonts/fpslineicons.eot?4b7e88656288c529d4568aaffcffe66f) format("embedded-opentype"), url(../../fonts/fpslineicons.woff?d4ffd8d867c1e8f54235a763738de7f2) format("woff"), url(../../fonts/fpslineicons.ttf?a98d6230aa00aef0abfb57fcc7a93015) format("truetype"), url(../../fonts/fpslineicons.svg?f590d10c44ee4eae2a3c48ebf33120b9) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -30276,7 +30276,7 @@ body {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background: url(/images/default-skin.png?e3f799c6dec9af194c86decdf7392405) 0 0 no-repeat;
+  background: url(../../images/default-skin.png?e3f799c6dec9af194c86decdf7392405) 0 0 no-repeat;
   background-size: 264px 88px;
   width: 44px;
   height: 44px;
@@ -30288,7 +30288,7 @@ body {
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(/fonts/default-skin.svg?b257fa9c5ac8c515ac4d77a667ce2943);
+    background-image: url(../../fonts/default-skin.svg?b257fa9c5ac8c515ac4d77a667ce2943);
   }
 
   .pswp--svg .pswp__button--arrow--left,
@@ -30603,7 +30603,7 @@ a.pswp__share--download:hover {
 
 .pswp__preloader--active .pswp__preloader__icn {
   /* We use .gif in browsers that don't support CSS animation */
-  background: url(/images/preloader.gif?e34aafbb485a96eaf2a789b2bf3af6fe) 0 0 no-repeat;
+  background: url(../../images/preloader.gif?e34aafbb485a96eaf2a789b2bf3af6fe) 0 0 no-repeat;
 }
 
 .pswp--css_animation .pswp__preloader--active {
@@ -35464,7 +35464,7 @@ code,
 }
 
 .login-page.login-1 .login-wrapper::before {
-  background-image: url(/images/skynight.jpg?411c2fec8c7c3d8def47f635ead2865e);
+  background-image: url(../../images/skynight.jpg?411c2fec8c7c3d8def47f635ead2865e);
   background-position: center top;
   background-size: cover;
   content: '';
@@ -35538,7 +35538,7 @@ code,
 }
 
 .login-page.login-3::before {
-  background-image: url(/images/desk.jpg?e745de45e4d2ca425322959ca658c374);
+  background-image: url(../../images/desk.jpg?e745de45e4d2ca425322959ca658c374);
   background-position: center top;
   background-size: cover;
   content: '';
@@ -36369,7 +36369,7 @@ code,
 }
 
 .skin-tools .skin-radio.active::after {
-  background-image: url(/images/tick.png?d3bc8c8a9814b5f2866415e77941dab1);
+  background-image: url(../../images/tick.png?d3bc8c8a9814b5f2866415e77941dab1);
   background-size: 100% auto;
   width: 20px;
   height: 20px;
