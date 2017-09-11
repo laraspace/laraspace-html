@@ -329,11 +329,6 @@
 //CHARTS
 /* sparkline */
 .sparkline-chart {
-  .jqstooltip {
-    width: auto !important;
-    height: auto !important;
-  }
-
   .sparkline-chart-type {
     margin: 25px 40px !important;
     flex: 1;
@@ -346,6 +341,10 @@
     flex-wrap: wrap;
   }
 }
+.jqstooltip {
+    width: auto !important;
+    height: auto !important;
+  }
 
 @media(max-width: $small-breakpoint) {
   .sparkline-chart {
@@ -394,6 +393,8 @@
   margin: 20px auto !important;
 }
 .gauge-lg{
+   height: 250px;
+
   .basic-gauge, .donut-gauge, .color-gauge {
     height: 250px;
   }
@@ -402,11 +403,15 @@
   }
 }
 .gauge-md{
+  height: 180px;
+
   .basic-gauge, .donut-gauge, .color-gauge {
     height: 180px;
   }
 }
 .gauge-sm{
+   height: 120px;
+
   .basic-gauge, .donut-gauge, .color-gauge {
     height: 120px;
   }
@@ -432,7 +437,7 @@
   position: relative;
 }
 
-@media(max-width: $x-small-breakpoint) {
+@media(max-width: $x-small-breakpoint){
   .gauge-lg{
     .basic-gauge, .donut-gauge, .color-gauge {
       height: 180px !important;
@@ -484,7 +489,7 @@
   }
 
   .skin-radio.active::after {
-    background-image: url('../assets/global/img/skins/tick.png');
+    background-image: url('/assets/admin/img/skins/tick.png');
     background-size: 100% auto;
     width: 20px;
     height: 20px;

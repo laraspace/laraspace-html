@@ -85,10 +85,7 @@ var LaraspaceForms = function () {
                 }
             });
         });
-
     };
-
-
 
     return {
         //main function to initiate the module
